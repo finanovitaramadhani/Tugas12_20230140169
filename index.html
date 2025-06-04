@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pendaftaran Peminatan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="form-container">
+    <form id="form">
+      <h2><i class="fas fa-file-alt"></i> Pendaftaran Peminatan</h2>
+
+      <label for="nama"><i class="fas fa-user"></i> Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
+
+      <label for="nim"><i class="fas fa-id-card"></i> NIM</label>
+      <input type="text" id="nim" name="nim" placeholder="NIM anda" required>
+
+      <label><i class="fas fa-laptop-code"></i> Peminatan pada bidang:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="peminatan" value="Programming"> Programming</label>
+        <label><input type="radio" name="peminatan" value="Desain"> Desain</label>
+        <label><input type="radio" name="peminatan" value="Jaringan"> Jaringan</label>
+        <label><input type="radio" name="peminatan" value="Data"> Data</label>
+      </div>
+
+      <label for="alamat"><i class="fas fa-home"></i> Alamat</label>
+      <textarea id="alamat" name="alamat" placeholder="Tulis alamatmu di sini" rows="3" required></textarea>
+
+      <label for="angkatan"><i class="fas fa-graduation-cap"></i> Angkatan</label>
+      <select id="angkatan" name="angkatan">
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+
+      <label for="tanggal"><i class="fas fa-calendar-alt"></i> Tanggal Lahir</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+
+      <button type="submit"><i class="fas fa-paper-plane"></i> Kirim</button>
+
+      <div id="output"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
